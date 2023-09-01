@@ -1,0 +1,108 @@
+/* телефоны вертикально */
+@media (max-width: 480px) {
+    .header-flex__div{
+        flex-direction: column;
+    }
+    .header__main-nav{
+        flex-direction: column;
+    }
+    .ccilky{
+        width: 70%;
+    }
+    .main__div{
+        margin: 0 auto;
+    }
+    table{
+        width: 100%;
+        position: relative;
+        left: -20%;
+    }
+    .table2_grafik{
+        position: relative;
+        left: -5%;
+    }
+    .td2_grafik{
+        font-size: 25px;
+    }
+    .carousel-container{
+        display: none;
+    }
+    .td1{
+        font-size: 20px;
+    }
+    .main{
+
+    }
+}
+@media (min-width: 320px) and (max-width: 700px) {
+    .burger-menu {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+    .burger-menu::before,
+    .burger-menu::after {
+        content: ''; /* пустой контент */
+        background: #000; /*цвет бургера*/
+        position: absolute; /* позиция для общего блока*/
+        width: 100%; /* ширина*/
+        height: 2px; /* толщина полосок бургера */
+    }
+
+    .burger-menu::before {
+        top: 0; /* расположение верхней линии бургера */
+    }
+
+    .burger-menu span { /*средняя линия в виде span*/
+        background: #000;
+        position: absolute; 
+        width: 100%;
+        top: 9px;
+        height: 2px; 
+    }
+    .burger-menu::after {
+        bottom: 0; /* расположение нижней линии бургера */
+    }
+
+    .main-nav {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        height: 100%;
+        list-style-type: none;
+        background: #E7EFF8;
+        border: 1px solid #fff;
+        padding: 20px 10px;
+        transform: translateX(130%);
+        display: none;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        text-align: right;
+    }
+    .burger-menu.active {
+        z-index: 3;
+        /* transform: translateX(-40vw); */
+    }
+
+    .burger-menu.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .burger-menu.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .burger-menu.active span {
+        transform: scale(0);
+    }
+
+    .main-nav.active {
+        transform: translate(0);
+        display: block;
+    }
+}

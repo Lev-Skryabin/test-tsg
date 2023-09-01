@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт ТСЖ "Гранд"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="breakpoints.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="header-flex__div">
+            <img src="images/home_header.png">
+            <h1 class="header-h1">ТСЖ "Гранд"</h1>
+            <div class="header-p">
+                <p class="adress">г. Воронеж</p>
+                <p class="adress">улица Героев Сибиряков</p>
+                <p class="adress">дом 53а, офис 82</p>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <span></span>
+          </div>
+          <nav class="header__main-nav main-nav">
+              <li class="list__item"><a href="index.html " class="main-nav__a">Главная</a></li>
+              <li class="list__item"><a href="grafik.html " class="main-nav__a">График работы</a></li>
+              <li class="list__item"><a href="tarif.html " class="main-nav__a">Тарифы</a></li>
+              <li class="list__item"><a href="otchet.html " class="main-nav__a">Отчеты</a></li>
+              <li class="list__item"><a href="kap-remont.html " class="main-nav__a">Капитальный ремонт</a></li>
+              <li class="list__item"><a href="contacts.html " class="main-nav__a">Контакты</a></li>  
+          </nav>
+    </header>
+    <main>
+        <div class = "main__div">
+            <p class="kap-r-teg-p">       
+                Взносы на капитальный ремонт — это ежемесячные платежи, которые начисляются собственникам жилья в многоквартирных домах. Они являются обязательными
+                для всех граждан, за исключением льготных групп населения, и перечисляются на специальный счет в установленных законом банках. <br>   
+                Реквизиты специального счета ТСЖ «Гранд» <br> 
+                Владелец счета <br> 
+                ТСЖ "ГРАНД" <br>
+                Наименование кредитной организации <br>
+                ПАО СБЕРБАНК <br>
+                ОГРН кредитной организации <br>
+                1027700132195 <br>
+                ИНН кредитной организации <br>
+                7707083893 <br>
+                КПП кредитной организации <br>
+                773601001 <br>
+                БИК кредитной организации <br>
+                042007681 - ЦЕНТРАЛЬНО-ЧЕРНОЗЕМНЫЙ БАНК ПАО СБЕРБАНК <br>
+                Номер корреспондентского счета <br>
+                30101810600000000681 <br>
+                Номер расчетного счета <br>
+                40705810513000001394 <br>
+                Дата открытия счета <br>
+                13.03.2015 <br>
+                Основание открытия счета 
+                </p>
+                <p class="kap-r-teg-p">
+                Решение о выборе способа формирования фонда капитального ремонта от 10.06.2014 
+                Право на компенсацию расходов на оплату взносов на капитальный ремонт имеют следующие категории граждан: Герои СССР, РФ, полные кавалеры ордена Славы; Герои социалистического труда, Герои труда РФ, полные кавалеры ордена трудовой славы; ветераны труда и ветераны военной службы; инвалиды войны, участники Великой отечественной войны и их семьи; лица, награжденные знаком "Жителю блокадного Ленинграда", признанные инвалидами; несовершеннолетние узники концлагерей; члены семей военнослужащих, погибших при исполнении служебных обязанностей; граждане, пострадавшие от политических репрессий; ветераны боевых действий и их семьи; труженики тыла; дети-сироты; граждане, подвергшиеся воздействию радиации, и их семьи, достигших возраста 70 лет - в размере 50% (от регионального стандарта нормативной площади жилого помещения, используемой для расчета субсидий), достигших возраста 80 лет - в размере 100% (от регионального стандарта нормативной площади жилого помещения, используемой для расчета субсидий). </p>
+                <p class="kap-r-teg-p">
+                Стоит обратить внимание, что компенсация предоставляется гражданам при отсутствии у них задолженности по оплате жилого помещения и коммунальных услуг, в том числе взноса на капитальный ремонт, или при заключении и (или) выполнении гражданами соглашений по ее погашению. </p>
+                <p class="kap-r-teg-p">
+                Для того, чтобы оформить льготу можно обратиться в один из МФЦ по месту жительства.</p>
+                <p class="kap-r-teg-p">
+                Размер взноса на капитальный ремонт устанавливают региональные власти. Минимальный тариф на взносы на капитальный ремонт в Воронежской области в 2023 году составляет 10,21 руб. в соответствии с Приказом департамента жилищно-коммунального хозяйства и энергетики Воронежской области №285 от 02.12.2022 г. "Об установлении минимального размера взноса на капитальный ремонт общего имущества в многоквартирных домах, расположенных на территории Воронежской области".
+            </p>          
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script>
+        if(window.innerWidth < 481){
+          // Get all <p> tags on the page
+          const paragraphs = document.querySelectorAll('p');
+      
+          // Loop through each <p> tag and reduce font size by half
+          paragraphs.forEach(paragraph => {
+            const currentFontSize = window.getComputedStyle(paragraph).fontSize;
+            const newSize = parseFloat(currentFontSize) * 0.6; // Reduce size by half
+            paragraph.style.fontSize = newSize + 'px';
+          });
+      
+          const h1s = document.querySelectorAll('h1');
+          h1s.forEach(h1 => {
+            const currentFontSize = window.getComputedStyle(h1).fontSize;
+            const newSize = parseFloat(currentFontSize) * 0.4; // Reduce size by half
+            h1.style.fontSize = newSize + 'px';
+          });
+      
+          const as = document.querySelectorAll('a');
+          as.forEach(a => {
+            const currentFontSize = window.getComputedStyle(a).fontSize;
+            const newSize = parseFloat(currentFontSize) * 0.6; // Reduce size by half
+            a.style.fontSize = newSize + 'px';
+          });
+        }
+    </script>
+</body>
+<script>
+    let burger = document.querySelector('.burger-menu')
+    let nav = document.querySelector('.main-nav')
+    burger.addEventListener('click', function() {
+        burger.classList.toggle('active')
+        nav.classList.toggle('active')
+    })
+  </script>
+</html>

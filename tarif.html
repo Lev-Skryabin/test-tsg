@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт ТСЖ "Гранд"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="breakpoints.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="header-flex__div">
+            <img src="images/home_header.png">
+            <h1 class="header-h1">ТСЖ "Гранд"</h1>
+            <div class="header-p">
+                <p class="adress">г. Воронеж</p>
+                <p class="adress">улица Героев Сибиряков</p>
+                <p class="adress">дом 53а, офис 82</p>
+            </div>
+        </div>
+        <div class="burger-menu">
+          <span></span>
+        </div>
+        <nav class="header__main-nav main-nav">
+            <li class="list__item"><a href="index.html " class="main-nav__a">Главная</a></li>
+            <li class="list__item"><a href="grafik.html " class="main-nav__a">График работы</a></li>
+            <li class="list__item"><a href="tarif.html " class="main-nav__a">Тарифы</a></li>
+            <li class="list__item"><a href="otchet.html " class="main-nav__a">Отчеты</a></li>
+            <li class="list__item"><a href="kap-remont.html " class="main-nav__a">Капитальный ремонт</a></li>
+            <li class="list__item"><a href="contacts.html " class="main-nav__a">Контакты</a></li>  
+        </nav>
+    </header>
+    <main>
+        <div class = "main__div main">
+            <h1 class="zagolovok_tarif">
+                ТОВАРИЩЕСТВО СОБСТВЕННИКОВ ЖИЛЬЯ ТСЖ «Гранд»
+            </h1>
+            <p class="adrec_tarif">
+                394051, г. Воронеж, ул. Героев Сибиряков, д.53 А ,  оф.82, ИНН 3662163901;
+                КПП 366201001;ОГРН 1113668015295;ОКПО 91183526;БИК 042007681;
+                р /с 40703810513000051498 в Центрально-Черноземный банк Сбербанка России г. Воронеж, к/с 30101810600000000681
+                Тел. 8-950-762-80-45, факс 263-43-75.
+            </p>
+            <p class="ptarif">ТСЖ «Гранд» информирует<br>
+                С 01.07.2023 тарифы на  энергоресурсы:
+            </p>
+            <table class="table1">
+                <colgroup>
+                    <col span="2" style="background:LightCyan">
+                    <col style="background-color:LightCyan">
+                </colgroup>
+                <tr class="tr1">
+                  <td class="td1">Электрическая энергия для населения </td>
+                  <td class="td1 tddd">4,85 </td>
+                  <td class="td1">тариф установлен Приказом Департамента государственного регулирования тарифов Воронежской области от 18.11.2022 № 69/221 </td>
+                </tr>
+                <tr class="tr1">
+                  <td class="td1">Газ на 1000мкуб </td>
+                  <td class="td1 tddd">6954,11 </td>
+                  <td class="td1"> тариф установлен Приказом Департамента государственного регулирования тарифов Воронежской области от 18.11.2022 № 69/221</td>
+                </tr>
+                <tr class="tr1">
+                    <td class="td1">Питьевая холодная вода</td>
+                    <td class="td1 tddd">28,88 </td>
+                    <td class="td1">тариф установлен решением Департамента государственного регулирования тарифов Воронежской области от 18.11.2022 № 69/164 </td>
+                  </tr>
+                  <tr class="tr1">
+                    <td class="td1">Водоотведение</td>
+                    <td class="td1 tddd">27,49 </td>
+                    <td class="td1">тариф установлен решением Департамента государственного регулирования тарифов Воронежской области от 18.11.2022 № 69/1 </td>
+                  </tr>
+                  <tr class="tr1">
+                    <td class="td1">Тариф на вывоз ТКО </td>
+                    <td class="td1 tddd">593,26 </td>
+                    <td class="td1">тариф установлен Приказом Департамента по государственному регулированию тарифов Воронежский области от 15.11.2022г. №66/17 </td>
+                  </tr>
+                  <tr class="tr1">
+                    <td class="td1">Тарифы на ГВС</td>
+                    <td class="td1 tddd">593,26 </td>
+                    <td class="td1">тариф установлен Приказом Департамента по государственному регулированию тарифов Воронежский области от 15.11.2022г. №66/17 </td>
+                  </tr>
+                  <tr class="tr1">
+                    <td class="td1">Средний тариф на содержание и ремонт жилья</td>
+                    <td class="td1 tddd">57,03 </td>
+                    <td class="td1">рассчитываются ежемесячно индивидуально для каждой квартиры в зависимости от пользования ими услугами лифт и т.д </td>
+                  </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script>
+      if(window.innerWidth < 481){
+        // Get all <p> tags on the page
+        const paragraphs = document.querySelectorAll('p');
+    
+        // Loop through each <p> tag and reduce font size by half
+        paragraphs.forEach(paragraph => {
+          const currentFontSize = window.getComputedStyle(paragraph).fontSize;
+          const newSize = parseFloat(currentFontSize) * 0.8; // Reduce size by half
+          paragraph.style.fontSize = newSize + 'px';
+        });
+    
+        const h1s = document.querySelectorAll('h1');
+        h1s.forEach(h1 => {
+          const currentFontSize = window.getComputedStyle(h1).fontSize;
+          const newSize = parseFloat(currentFontSize) * 0.7; // Reduce size by half
+          h1.style.fontSize = newSize + 'px';
+        });
+    
+        const as = document.querySelectorAll('a');
+        as.forEach(a => {
+          const currentFontSize = window.getComputedStyle(a).fontSize;
+          const newSize = parseFloat(currentFontSize) * 0.6; // Reduce size by half
+          a.style.fontSize = newSize + 'px';
+        });
+      }
+    </script>
+</body> 
+<script>
+  let burger = document.querySelector('.burger-menu')
+  let nav = document.querySelector('.main-nav')
+  burger.addEventListener('click', function() {
+      burger.classList.toggle('active')
+      nav.classList.toggle('active')
+  })
+</script>
+</html>

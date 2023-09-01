@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт ТСЖ "Гранд"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="breakpoints.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="header-flex__div">
+            <img src="images/home_header.png">
+            <h1 class="header-h1">ТСЖ "Гранд"</h1>
+            <div class="header-p">
+                <p class="adress">г. Воронеж</p>
+                <p class="adress">улица Героев Сибиряков</p>
+                <p class="adress">дом 53а, офис 82</p>
+            </div>
+        </div>
+        <div class="burger-menu">
+          <span></span>
+        </div>
+        <nav class="header__main-nav main-nav">
+            <li class="list__item"><a href="index.html " class="main-nav__a">Главная</a></li>
+            <li class="list__item"><a href="grafik.html " class="main-nav__a">График работы</a></li>
+            <li class="list__item"><a href="tarif.html " class="main-nav__a">Тарифы</a></li>
+            <li class="list__item"><a href="otchet.html " class="main-nav__a">Отчеты</a></li>
+            <li class="list__item"><a href="kap-remont.html " class="main-nav__a">Капитальный ремонт</a></li>
+            <li class="list__item"><a href="contacts.html " class="main-nav__a">Контакты</a></li>  
+        </nav>
+    </header>
+    <main class="maingrafik">
+        <div class = "main__div">
+            <p class="tel_ekctr_cly">Режим работы офиса ТСЖ "ГРАНД"</p>
+            <table class="table2 table2_grafik">
+                <tr class="tr2 tr2_grafik">
+                  <td class="td2 td2_grafik">Понедельник</td>
+                  <td class="td2 td2_grafik">10-19, прием с 16 до 18 час.</td>
+                </tr>
+                <tr class="tr2 tr2_grafik">
+                  <td class="td2 td2_grafik">Вторник</td>
+                  <td class="td2 td2_grafik">8-17, прием с 8 до 10 час.</td>
+                </tr>
+                <tr class="tr2 tr2_grafik">
+                    <td class="td2 td2_grafik">Среда</td>
+                    <td class="td2 td2_grafik">10-19, прием с 17 до 20 час.</td>
+                  </tr>
+                  <tr class="tr2 tr2_grafik">
+                    <td class="td2 td2_grafik">Четверг</td>
+                    <td class="td2 td2_grafik">10-19, прием с 16 до 18 час.</td>
+                  </tr>
+                  <tr class="tr2 tr2_grafik">
+                    <td class="td2 td2_grafik">Пятница</td>
+                    <td class="td2 td2_grafik">10-19, прием с 8 до 10 час.</td>
+                  </tr>
+            </table>           
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+<script>
+  console.log(window.innerWidth);
+  if(window.innerWidth < 481){
+    // Get all <p> tags on the page
+    const paragraphs = document.querySelectorAll('p');
+    console.log("check");
+
+    // Loop through each <p> tag and reduce font size by half
+    paragraphs.forEach(paragraph => {
+      const currentFontSize = window.getComputedStyle(paragraph).fontSize;
+      const newSize = parseFloat(currentFontSize) * 0.6; // Reduce size by half
+      paragraph.style.fontSize = newSize + 'px';
+    });
+
+    const h1s = document.querySelectorAll('h1');
+    h1s.forEach(h1 => {
+      const currentFontSize = window.getComputedStyle(h1).fontSize;
+      const newSize = parseFloat(currentFontSize) * 0.4; // Reduce size by half
+      h1.style.fontSize = newSize + 'px';
+    });
+
+    const as = document.querySelectorAll('a');
+    as.forEach(a => {
+      const currentFontSize = window.getComputedStyle(a).fontSize;
+      const newSize = parseFloat(currentFontSize) * 0.6; // Reduce size by half
+      a.style.fontSize = newSize + 'px';
+    });
+  }
+</script>
+<script>
+  let burger = document.querySelector('.burger-menu')
+  let nav = document.querySelector('.main-nav')
+  burger.addEventListener('click', function() {
+      burger.classList.toggle('active')
+      nav.classList.toggle('active')
+  })
+</script>
+</html>
